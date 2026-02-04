@@ -18,14 +18,14 @@ def gestion_interne_et_affichages_capteurs(dico) :
     temp= str(bme.temperature[:-1])
     hum = str(bme.humidity[:-1])
     pres = str(bme.pressure[:-3])
-    echo(temp)#debug
+    print(temp)#debug
     if temp<consigne
         pilote_chauffage.on()
         pilote_chauffage_t='on'
     else
         pilote_chauffage.off()
         pilote_chauffage_t='off'
-    echo(pilote_chauffage_t)#debug
+    print(pilote_chauffage_t)#debug
     ################ Actualisation des variables web  #############
     dico[temperature] = str(temp)
     dico[humidity] = str(hum)
@@ -34,5 +34,6 @@ def gestion_interne_et_affichages_capteurs(dico) :
     ###################################################################    
     print (dico) # controle debug
     return(dico)
+
 
 
