@@ -24,9 +24,9 @@ Le calculateur
 			<label for="Humidité">Humidité</label>
 			<label for="pession">pession</label>
 			<div>
-				<input id="vitesseBroche" name="vitessebroche" readonly="readonly" class="codepeoplecalculatedfield field large valid" type="text" value="{{temperature}}">
-				<input id="vitesseMaxAvanceZ" name="vitesseMaxAvanceZ" readonly="readonly" class="codepeoplecalculatedfield field large valid" type="text" value="{{humidity}}">
-				<input id="profondeurPasse" name="profondeurPasse" readonly="readonly" class="codepeoplecalculatedfield field large valid" type="text" value="{{pressure}}">
+				<input id="vitesseBroche" name="vitessebroche" readonly="readonly"  type="text" value="{{temperature}}">
+				<input id="vitesseMaxAvanceZ" name="vitesseMaxAvanceZ" readonly="readonly"  type="text" value="{{humidity}}">
+				<input id="profondeurPasse" name="profondeurPasse" readonly="readonly"  type="text" value="{{pressure}}">
 			</div>
 		</div>
 	</fieldset>
@@ -37,17 +37,17 @@ Le calculateur
 			<label for="tempnin">Seuil mini température</label>
 			<label for="tempmax">Seuil maxi température</label>
 			<div>
-				<input inputmode="decimal" id="tempnin" name="tempnin" min="2" max="6" step="1" class="field digits large required" type="number" value="3">
-				<input inputmode="decimal" id="tempmax" name="nbdent" min="1" step="1" class="field digits large required" type="number" value="2">
+				<input inputmode="decimal" id="tempnin" name="tempnin" min="2" max="6" step="1"  type="number" value="3">
+				<input inputmode="decimal" id="tempmax" name="tempmax" min="1" max="6" step="1"  type="number" value="3">
 			</div>
 		</div>
 		<div>
 			<h3>Fraise</h3>
-			<label for="diam">Diamètre</label>
-			<label for="nbd">Nombre de dents</label>
+			<label for="diam">% humidité mini</label>
+			<label for="nbd">% humidité maxi</label>
 			<div>
-				<input inputmode="decimal" id="diam" name="diam" min="2" max="6" step="1" class="field digits large required" type="number" value="3">
-				<input inputmode="decimal" aria-label="Nombre de dents" id="nbdent" name="nbdent" min="1" step="1" class="field digits large required" type="number" value="2">
+				<input inputmode="decimal" id="humidmin" name="humidmin" min="2" max="6" step="1"  type="number" value="3">
+				<input inputmode="decimal" id="humidmax" name="humidmax" min="1" max="6" step="1"  type="number" value="2">
 			</div>
 		</div>
 	</fieldset>
