@@ -1,1 +1,20 @@
-
+label {
+  color: #ff533c;
+  font-size: 20px;
+}
+input[type="text"], #fbuilder textarea, #fbuilder select {
+  font-family: Roboto;
+  color: #433440;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.box{
+margin: 10px;
+}
