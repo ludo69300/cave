@@ -20,17 +20,23 @@ function fct_humid_max() {
 }
 function initialisation_variable() {
 	var commande_XHR = XMLHttpRequest();
+	let Temperature_value = document.getElementById("Temperature").value;
+	let Humidity_value = document.getElementById("Humidity").value;
 	let temp_nini_value = document.getElementById("temp_nini").value;
 	let temp_max_value = document.getElementById("temp_max").value;
 	let humid_mini_value = document.getElementById("humid_mini").value;
 	let humid_max_value = document.getElementById("humid_max").value;
-	commande_XHR.open("GET","/?temp_nini"+temp_nini_value,true);
+	commande_XHR.open("GET","/?temp_nini"+Temperature_value,true);
+	commande_XHR.send();
+	commande_XHR.open("GET","/?temp_max"+temp_max_value,true);
+	commande_XHR.send();
+	commande_XHR.open("GET","/?temp_nini"+Humidity_value,true);
 	commande_XHR.send();
 	commande_XHR.open("GET","/?temp_max"+temp_max_value,true);
 	commande_XHR.send();
 	commande_XHR.open("GET","/?humid_mini"+humid_mini_value,true);
 	commande_XHR.send();
-	commande_XHR.open("GET","/?humid_max"+temp_nini_value,true);
+	commande_XHR.open("GET","/?humid_max"+humid_max_value,true);
 	commande_XHR.send();
 };
 initialisation_variable()
